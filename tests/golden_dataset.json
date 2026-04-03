@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "collection": "docs_rag",
+    "query": "How do I create a Kubeflow pipeline?",
+    "expected_source_contains": "kubeflow.org/docs/components/pipelines",
+    "expected_keywords": ["pipeline", "component", "task", "KFP"]
+  },
+  {
+    "id": 2,
+    "collection": "docs_rag",
+    "query": "How do I install Kubeflow on a Kubernetes cluster?",
+    "expected_source_contains": "kubeflow.org/docs/started",
+    "expected_keywords": ["install", "kubectl", "namespace", "kubernetes"]
+  },
+  {
+    "id": 3,
+    "collection": "docs_rag",
+    "query": "What is KServe and how does it work?",
+    "expected_source_contains": "kubeflow.org/docs/external-add-ons/kserve",
+    "expected_keywords": ["KServe", "inference", "model", "serving"]
+  },
+  {
+    "id": 4,
+    "collection": "docs_rag",
+    "query": "How do I configure autoscaling for a KServe InferenceService?",
+    "expected_source_contains": "kubeflow.org/docs/external-add-ons/kserve",
+    "expected_keywords": ["autoscaling", "InferenceService", "replicas", "scaleToZero"]
+  },
+  {
+    "id": 5,
+    "collection": "docs_rag",
+    "query": "What is a Kubeflow notebook server?",
+    "expected_source_contains": "kubeflow.org/docs/components/notebooks",
+    "expected_keywords": ["notebook", "JupyterLab", "workspace", "server"]
+  },
+  {
+    "id": 6,
+    "collection": "docs_rag",
+    "query": "How does multi-user isolation work in Kubeflow?",
+    "expected_source_contains": "kubeflow.org/docs/components/central-dash",
+    "expected_keywords": ["namespace", "profile", "isolation", "RBAC"]
+  },
+  {
+    "id": 7,
+    "collection": "docs_rag",
+    "query": "How do I use Katib for hyperparameter tuning?",
+    "expected_source_contains": "kubeflow.org/docs/components/katib",
+    "expected_keywords": ["Katib", "hyperparameter", "experiment", "tuning"]
+  },
+  {
+    "id": 8,
+    "collection": "docs_rag",
+    "query": "What storage options does Kubeflow support for pipeline artifacts?",
+    "expected_source_contains": "kubeflow.org/docs/components/pipelines",
+    "expected_keywords": ["artifact", "storage", "MinIO", "PVC"]
+  },
+  {
+    "id": 9,
+    "collection": "code_rag",
+    "query": "Show me the YAML spec for a KServe InferenceService",
+    "expected_source_contains": "kubeflow/manifests",
+    "expected_keywords": ["InferenceService", "apiVersion", "spec", "predictor"]
+  },
+  {
+    "id": 10,
+    "collection": "code_rag",
+    "query": "What does scaleToZeroGracePeriod do in a KServe config?",
+    "expected_source_contains": "kubeflow/manifests",
+    "expected_keywords": ["scaleToZeroGracePeriod", "scale", "knative", "serving"]
+  },
+  {
+    "id": 11,
+    "collection": "code_rag",
+    "query": "How is a ServingRuntime defined for vLLM in Kubeflow?",
+    "expected_source_contains": "kubeflow/manifests",
+    "expected_keywords": ["ServingRuntime", "vLLM", "containers", "modelFormat"]
+  },
+  {
+    "id": 12,
+    "collection": "code_rag",
+    "query": "How do I define a Kubeflow pipeline component in Python?",
+    "expected_source_contains": "kubeflow/pipelines",
+    "expected_keywords": ["@component", "def", "base_image", "packages_to_install"]
+  },
+  {
+    "id": 13,
+    "collection": "code_rag",
+    "query": "What namespace does the docs-agent deploy into by default?",
+    "expected_source_contains": "kubeflow/docs-agent",
+    "expected_keywords": ["namespace", "docs-agent", "deployment", "metadata"]
+  },
+  {
+    "id": 14,
+    "collection": "code_rag",
+    "query": "How is the Milvus vector database deployed in the docs-agent stack?",
+    "expected_source_contains": "kubeflow/docs-agent",
+    "expected_keywords": ["Milvus", "deployment", "statefulset", "port"]
+  },
+  {
+    "id": 15,
+    "collection": "issues_rag",
+    "query": "KFP pipeline step failing with OOMKilled error",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["OOMKilled", "memory", "limit", "resources"]
+  },
+  {
+    "id": 16,
+    "collection": "issues_rag",
+    "query": "InferenceService stuck in Not Ready state",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["NotReady", "InferenceService", "status", "condition"]
+  },
+  {
+    "id": 17,
+    "collection": "issues_rag",
+    "query": "Kubeflow pipeline step fails with permission denied on GCS",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["permission", "GCS", "serviceAccount", "storage"]
+  },
+  {
+    "id": 18,
+    "collection": "issues_rag",
+    "query": "How to fix ImagePullBackOff for a custom pipeline component",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["ImagePullBackOff", "image", "registry", "secret"]
+  },
+  {
+    "id": 19,
+    "collection": "issues_rag",
+    "query": "Notebook server fails to start with PVC pending",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["PVC", "pending", "storageClass", "notebook"]
+  },
+  {
+    "id": 20,
+    "collection": "issues_rag",
+    "query": "KServe pod not scaling up after scaleToZero",
+    "expected_source_contains": "github.com/kubeflow",
+    "expected_keywords": ["scaleToZero", "cold start", "knative", "revision"]
+  }
+]
